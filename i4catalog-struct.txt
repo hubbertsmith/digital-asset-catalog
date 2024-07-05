@@ -1,0 +1,64 @@
+Database structure for i4catalog-v1:
+
+## Table: asset-0
+
+### Columns:
+- asset_id: integer NOT NULL
+- asset_name: character varying(255) NULL
+- asset_oversight: character varying(255) NULL
+- asset_owner: character varying(255) NULL
+- policy: character varying(255) NULL
+- born_on: date NULL
+- decommission: date NULL
+- notes: text NULL
+- blob: bytea NULL
+
+### Constraints:
+- asset-0_pkey (PRIMARY KEY): PRIMARY KEY (asset_id)
+
+## Table: asset-event
+
+### Columns:
+- id: integer NOT NULL
+- asset_id: integer NULL
+- event: character varying(255) NULL
+- location: character varying(255) NULL
+- signoff: character varying(255) NULL
+- date: date NULL
+- notes: text NULL
+- blob: bytea NULL
+
+### Constraints:
+- asset-event_pkey (PRIMARY KEY): PRIMARY KEY (id)
+- asset-event_asset_id_fkey (FOREIGN KEY): FOREIGN KEY (asset_id) REFERENCES "asset-0"(asset_id)
+
+## Table: policy-0
+
+### Columns:
+- policy_id: integer NOT NULL
+- policy: character varying(255) NULL
+- policy_oversight: character varying(255) NULL
+- policy_owner: character varying(255) NULL
+- signoff: character varying(255) NULL
+- date: date NULL
+- decommission: date NULL
+- notes: text NULL
+- blob: bytea NULL
+
+### Constraints:
+- policy-0_pkey (PRIMARY KEY): PRIMARY KEY (policy_id)
+
+## Table: policy-event
+
+### Columns:
+- id: integer NOT NULL
+- policy_id: integer NULL
+- event: character varying(255) NULL
+- signoff: character varying(255) NULL
+- date: date NULL
+- notes: text NULL
+- blob: bytea NULL
+
+### Constraints:
+- policy-event_pkey (PRIMARY KEY): PRIMARY KEY (id)
+- policy-event_policy_id_fkey (FOREIGN KEY): FOREIGN KEY (policy_id) REFERENCES "policy-0"(policy_id)
