@@ -1,0 +1,29 @@
+assets:
+  - asset_name: sales10
+    asset_oversight: mike
+    asset_owner: mark
+    policy: Policy A
+    born_on: 2023-01-15
+    decommission: 2028-01-15
+    notes: 
+
+  - asset_name: sales11
+    asset_oversight: nelson
+    asset_owner: nick
+    policy: Policy B
+    born_on: 2022-11-01
+    notes:
+
+  - asset_name: sales12
+    asset_oversight: oscar
+    asset_owner: otto
+    policy: Policy C
+    born_on: 2023-03-10
+    notes: 
+
+  - asset_name: sales13
+    asset_oversight: peter
+    asset_owner: paul
+    policy: Policy D
+    born_on: 2023-02-20
+    notes: 

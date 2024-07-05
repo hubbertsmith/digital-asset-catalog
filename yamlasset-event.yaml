@@ -1,0 +1,14 @@
+asset_events:
+  - asset_id: 1
+    event: Maintenance
+    location: Server Room
+    signoff: John Doe
+    date: 2023-07-15
+    notes: Regular quarterly maintenance performed
+
+  - asset_id: 2
+    event: Software Update
+    location: IT Department
+    signoff: Jane Smith
+    date: 2023-07-20
+    notes: Updated operating system to latest version

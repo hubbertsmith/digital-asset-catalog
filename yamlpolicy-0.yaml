@@ -1,0 +1,36 @@
+policies:
+  - policy: Data Protection Policy
+    policy_oversight: Legal Department
+    policy_owner: Jane Smith
+    signoff: John Doe
+    date: 2023-01-15
+    decommission: 2025-01-15
+    notes: Covers all aspects of data handling and protection
+
+  - policy: Information Security Policy
+    policy_oversight: IT Department
+    policy_owner: Alice Johnson
+    signoff: Bob Brown
+    date: 2023-02-01
+    notes: Outlines security measures for all company information systems
+
+  - policy: Acceptable Use Policy
+    policy_oversight: HR Department
+    policy_owner: Charlie Davis
+    signoff: Diana Evans
+    date: 2023-03-10
+    notes: Guidelines for appropriate use of company resources
+
+  - policy: Disaster Recovery Policy
+    policy_oversight: Operations Department
+    policy_owner: Eve Franklin
+    signoff: Frank Green
+    date: 2023-04-05
+    notes: Procedures for maintaining business continuity in case of disasters
+
+  - policy: Remote Work Policy
+    policy_oversight: HR Department
+    policy_owner: Grace Harris
+    signoff: Henry Irving
+    date: 2023-05-20
+    notes: Guidelines for employees working remotely

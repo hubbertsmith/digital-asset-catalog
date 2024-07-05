@@ -1,0 +1,32 @@
+policy_events:
+  - policy_id: 1
+    event: Annual Review
+    signoff: John Doe
+    date: 2023-07-15
+    notes: Conducted annual review of Data Protection Policy, no changes required
+
+  - policy_id: 2
+    event: Policy Update
+    signoff: Alice Johnson
+    date: 2023-08-01
+    notes: Updated Information Security Policy to include new cybersecurity measures
+
+  - policy_id: 3
+    event: Training Session
+    signoff: Charlie Davis
+    date: 2023-08-10
+    notes: Conducted company-wide training on Acceptable Use Policy
+
+  - policy_id: 4
+    event: Drill Exercise
+    signoff: Eve Franklin
+    date: 2023-09-05
+    notes: Performed disaster recovery drill based on current policy
+
+  - policy_id: 5
+    event: Policy Amendment
+    signoff: Grace Harris
+    date: 2023-09-15
+    notes: Added new section to Remote Work Policy regarding equipment usage
+
+
