@@ -2,18 +2,15 @@
 Manage digital assets simply and consistently. As shown in CISA 800-53 framework
 
 dbcreate.py creates empty database  
-
 create table-asset-0.py, table-asset-event.py table-policy-0.py, table-policy-event.py  
+use i4catalog-struct.txt to view database structure
 
 report-all.py sends all tables to i4catalog_data_report.md  
 
-asset-0.yaml to add data. then run yamlasset-0.py to update database  
-
-use asset-event.yaml to add data. then run yaml-asset-event.py to update database  
-
-use policy-0.yaml to add data. then run policy-0y.py to update database  
-
-use policy-event.yaml to add data. then run policy-eventy.py to update database  
+yamlasset-0.yaml to add data. then run yamlasset-0.py to update database  
+yamlasset-event.yaml to add data. then run yamlasset-event.py to update database  
+yamlpolicy-0.yaml to add data. then run yamlpolicy-0y.py to update database  
+yamlpolicy-event.yaml to add data. then run yamlpolicy-eventy.py to update database  
 
 use dbdisplay-edit.py to display tables, add-row, edit-row, delete-row  
 
