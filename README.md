@@ -15,3 +15,7 @@ use policy-0.yaml to add data. then run policy-0y.py to update database
 
 use policy-event.yaml to add data. then run policy-eventy.py to update database  
 
+use dbdisplay-edit.py to display tables, add-row, edit-row, delete-row  
+
+
+
