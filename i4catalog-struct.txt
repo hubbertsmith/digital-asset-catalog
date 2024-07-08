@@ -1,5 +1,5 @@
 Database structure for i4catalog-v1:
-
+# licensed under terms of MIT License -- Copyright (c) 2024 i4 Ops, inc. and hubbert Smith 
 ## Table: asset-0
 
 ### Columns:
