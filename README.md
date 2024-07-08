@@ -1,4 +1,6 @@
 # digital-asset-catalog
+licensed under terms of MIT License -- Copyright (c) 2024 i4 Ops, inc. and hubbert Smith  
+
 Manage digital assets simply and consistently. As shown in CISA 800-53 framework
 
 pip install -r requirements.txt  
