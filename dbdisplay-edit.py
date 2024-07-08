@@ -1,3 +1,5 @@
+# licensed under terms of MIT License -- Copyright (c) 2024 i4 Ops, inc. and hubbert Smith  
+
 import psycopg2
 import PySimpleGUI as sg
 from psycopg2 import sql
