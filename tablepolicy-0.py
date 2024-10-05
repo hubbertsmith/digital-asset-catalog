@@ -22,7 +22,8 @@ columns = [
     ('date', 'DATE'),
     ('decommission', 'DATE'),
     ('notes', 'TEXT'),
-    ('blob', 'BYTEA')
+    ('blob', 'BYTEA'),
+    ('tags', 'TEXT[]')
 ]
 
 # SQL command to create the table
