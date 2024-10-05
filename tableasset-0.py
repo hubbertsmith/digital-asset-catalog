@@ -6,8 +6,8 @@ from psycopg2 import sql
 db_params = {
     'dbname': 'i4catalog-v1',
     'user': 'hubbert',
-    'password': 'u5',
-    'host': 'u5',
+    'password': 'u0',
+    'host': 'u0',
     'port': 5432
 }
 
