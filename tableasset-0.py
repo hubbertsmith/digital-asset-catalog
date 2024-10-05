@@ -18,11 +18,13 @@ columns = [
     ('asset_name', 'VARCHAR(255)'),
     ('asset_oversight', 'VARCHAR(255)'),
     ('asset_owner', 'VARCHAR(255)'),
-    ('policy', 'VARCHAR(255)'),
+    ('policy-tags', 'TEXT[]'),
+    ('location-tags', 'TEXT[]'),
     ('born_on', 'DATE'),
     ('decommission', 'DATE'),
     ('notes', 'TEXT'),
-    ('blob', 'BYTEA')
+    ('blob', 'BYTEA'),
+    ('tags', 'TEXT[]')
 ]
 
 # SQL command to create the table
