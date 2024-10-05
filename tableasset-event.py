@@ -17,7 +17,7 @@ columns = [
     ('id', 'SERIAL PRIMARY KEY'),
     ('asset_id', 'INTEGER'),
     ('event', 'VARCHAR(255)'),
-    ('location', 'VARCHAR(255)'),
+    ('location', 'TEXT[]'),
     ('signoff', 'VARCHAR(255)'),
     ('date', 'DATE'),
     ('notes', 'TEXT'),
