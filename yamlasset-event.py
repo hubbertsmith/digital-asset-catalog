@@ -15,8 +15,8 @@ db_params = {
 
 def insert_asset_event(cursor, event):
     insert_query = sql.SQL("""
-        INSERT INTO "asset-event" (asset_id, event, location, signoff, date, notes)
-        VALUES (%s, %s, %s, %s, %s, %s)
+        INSERT INTO "asset-event" (asset_id, event, location, signoff, date, notes, tags)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
         RETURNING id
     """)
     
@@ -26,7 +26,8 @@ def insert_asset_event(cursor, event):
         event.get('location'),
         event.get('signoff'),
         event.get('date'),
-        event.get('notes')
+        event.get('notes'),
+        event.get('tags')
     ))
     
     return cursor.fetchone()[0]
