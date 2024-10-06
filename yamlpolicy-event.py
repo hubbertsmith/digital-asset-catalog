@@ -8,15 +8,15 @@ from datetime import datetime, date
 db_params = {
     'dbname': 'i4catalog-v1',
     'user': 'hubbert',
-    'password': 'u5',
-    'host': 'u5',
+    'password': 'u0',
+    'host': 'u0',
     'port': 5432
 }
 
 def insert_policy_event(cursor, event):
     insert_query = sql.SQL("""
-        INSERT INTO "policy-event" (policy_id, event, signoff, date, notes)
-        VALUES (%s, %s, %s, %s, %s)
+        INSERT INTO "policy-event" (policy_id, event, signoff, date, notes, tags)
+        VALUES (%s, %s, %s, %s, %s, %s)
         RETURNING id
     """)
     
@@ -26,6 +26,7 @@ def insert_policy_event(cursor, event):
         event.get('signoff'),
         event.get('date'),
         event.get('notes')
+        event.get('tags')
     ))
     
     return cursor.fetchone()[0]
