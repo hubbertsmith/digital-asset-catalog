@@ -7,8 +7,8 @@ import yaml
 db_params = {
     'dbname': 'i4catalog-v1',
     'user': 'hubbert',
-    'password': 'u5',
-    'host': 'u5',
+    'password': 'u0',
+    'host': 'u0',
     'port': 5432
 }
 
@@ -26,7 +26,8 @@ def insert_asset(cursor, asset):
         asset.get('policy'),
         asset.get('born_on'),
         asset.get('decommission'),
-        asset.get('notes')
+        asset.get('notes'),
+        asset.get('tags') or [] 
     ))
     
     return cursor.fetchone()[0]
