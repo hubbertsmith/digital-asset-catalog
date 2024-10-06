@@ -8,15 +8,15 @@ from datetime import datetime, date
 db_params = {
     'dbname': 'i4catalog-v1',
     'user': 'hubbert',
-    'password': 'u5',
-    'host': 'u5',
+    'password': 'u0',
+    'host': 'u0',
     'port': 5432
 }
 
 def insert_policy(cursor, policy):
     insert_query = sql.SQL("""
         INSERT INTO "policy-0" (policy, policy_oversight, policy_owner, signoff, date, decommission, notes)
-        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
         RETURNING policy_id
     """)
     
@@ -28,6 +28,7 @@ def insert_policy(cursor, policy):
         policy.get('date'),
         policy.get('decommission'),
         policy.get('notes')
+        policy.get('tags')
     ))
     
     return cursor.fetchone()[0]
