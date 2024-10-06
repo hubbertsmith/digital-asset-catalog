@@ -14,8 +14,8 @@ db_params = {
 
 def insert_asset(cursor, asset):
     insert_query = sql.SQL("""
-        INSERT INTO "asset-0" (asset_name, asset_oversight, asset_owner, policy, born_on, decommission, notes)
-        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        INSERT INTO "asset-0" (asset_name, asset_oversight, asset_owner, policy, born_on, decommission, notes, tags)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
         RETURNING asset_id
     """)
     
