@@ -6,8 +6,8 @@ from psycopg2 import sql
 db_params = {
     'dbname': 'i4catalog-v1',
     'user': 'hubbert',
-    'password': 'u5',
-    'host': 'u5',
+    'password': 'u0',
+    'host': 'u0',
     'port': 5432
 }
 
@@ -21,7 +21,8 @@ columns = [
     ('signoff', 'VARCHAR(255)'),
     ('date', 'DATE'),
     ('notes', 'TEXT'),
-    ('blob', 'BYTEA')
+    ('blob', 'BYTEA'),
+    ('tags', 'TEXT[]')
 ]
 
 # SQL command to create the table
